@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnson | Cyber Security Specialist</title>
+    <meta name="description" content="Portfolio of Johnson, a Senior Cyber Security Specialist." />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Space Grotesk (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            },
+            colors: {
+              brand: {
+                black: '#0D0218', // Deep Purple/Black
+                dark: '#18042B',  // Dark Purple
+                gray: '#2D1B4E',  // Muted Purple
+                accent: '#CCFF00', // Acid Lime (Kept for high contrast against purple)
+                white: '#F0F0F0',
+              }
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #2D1B4E 1px, transparent 1px), linear-gradient(to bottom, #2D1B4E 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0D0218;
+        background-image: url('https://photos.fife.usercontent.google.com/pw/AP1GczNdyGrAlVB2LHaM0PZ3yrB9R49SLj_0ghKyJt9myBe-rFiqSViI7vS1=w499-h595-s-no-gm?authuser=0');
+        background-size: cover;
+        background-position: center top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #F0F0F0;
+        min-height: 100vh;
+      }
+      /* Purple overlay to tint the image and ensure text readability */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(13, 2, 24, 0.75); /* Deep purple overlay, slightly reduced opacity to show bg */
+        z-index: -1;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      .neon-glow {
+        box-shadow: 0 0 10px rgba(204, 255, 0, 0.1), 0 0 20px rgba(204, 255, 0, 0.05);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
